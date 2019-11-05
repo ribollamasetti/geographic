@@ -1,0 +1,26 @@
+{
+  "name": "geographic",
+  "version": "1.0.0",
+  "description": "Implementation of geographic conversions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ribollamasetti/geographic.git"
+  },
+  "keywords": [
+    "geographiclib"
+  ],
+  "author": "Felipe Ribolla Masetti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ribollamasetti/geographic/issues"
+  },
+  "homepage": "https://github.com/ribollamasetti/geographic#readme",
+  "dependencies": {
+    "compute-polynomial": "^1.1.0",
+    "mathjs": "^6.2.3"
+  }
+}
