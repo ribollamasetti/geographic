@@ -1,6 +1,6 @@
 {
-  "name": "geographic",
-  "version": "1.0.0",
+  "name": "@technomar/geographic",
+  "version": "1.0.1",
   "description": "Implementation of geographic conversions.",
   "main": "index.js",
   "scripts": {

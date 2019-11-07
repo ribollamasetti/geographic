@@ -7,14 +7,14 @@ This library implements a subset of the [Matlab toolbox](https://www.mathworks.c
 # Installation
 
 ``` 
-$ npm install geographic
+$ npm install @technomar/geographic
 ```
 
 # Usage
 
 In [node](https://nodejs.org/en/), do
 ``` javascript
-var geographic = require("geographic");
+var geo = require("@technomar/geographic");
 ```
 
 # Examples
@@ -27,7 +27,7 @@ On `require` the object is loaded with the default ellipsoid (WGS84) and the pro
 * h = 0 m
 
 ``` javascript
-var geo = require("geographic");
+var geo = require("@technomar/geographic");
 var lat; var lon;
 ```
 
@@ -43,7 +43,7 @@ This method set the ellipsoid property to WGS84.
 * eccentricity => correspondent to flattening
 
 ``` javascript
-geo.defaultellipsoid();
+geo.setDefaultEllipsoid();
 ```
 
 ### setellipsoid
@@ -51,7 +51,7 @@ geo.defaultellipsoid();
 Set the ellipsoid to desired value
 
 ``` javascript
-geo.setellipsoid(radius,flattening);
+geo.setEllipsoid(radius,flattening);
 ```
 
 ### getellipsoid
@@ -59,7 +59,7 @@ geo.setellipsoid(radius,flattening);
 Return the current ellipsoid
 
 ``` javascript
-var elip = geo.getellipsoid();
+var elip = geo.getEllipsoid();
 // elip <= {ellipsoid.radius, ellipsoid.flattening, ellipsoid.eccentricity}
 ```
 ## Projection origin
@@ -71,7 +71,7 @@ The ```origin ``` property store the projection origin.
 Set the origin position
 
 ``` javascript
-geo.setorigin(lat,lon,heigth);
+geo.setOrigin(lat,lon,heigth);
 ```
 
 ### getorigin
@@ -79,7 +79,7 @@ geo.setorigin(lat,lon,heigth);
 Return the current origin
 
 ``` javascript
-var ori = geo.getorigin();
+var ori = geo.getOrigin();
 // ori <= {origin.lat,origin.lon,origin.h}
 ```
 

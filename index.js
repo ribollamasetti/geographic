@@ -9,7 +9,7 @@ function geographic () {
      */
     var init = ()=>{
             ellipsoid = { radius:0, flattening:0, eccentricity:0 };
-            me.defaultellipsoid();
+            me.setDefaultEllipsoid();
             origin = { lat:0, lon:0, h:0 };
     }
 
@@ -19,7 +19,7 @@ function geographic () {
     /**
      * Set the ellipsoid to WGS84
      */
-    this.defaultellipsoid = () => {
+    this.setDefaultEllipsoid = () => {
             ellipsoid.radius = 6378137;
             ellipsoid.flattening = 1 / 298.257223563;
             ellipsoid.eccentricity = flat2ecc(1 / 298.257223563);
@@ -28,7 +28,7 @@ function geographic () {
     /**
      * Set the ellipsoid to the one with given earth radius and flattening
      */
-    this.setellipsoid = (radius, flattening) => {
+    this.setEllipsoid = (radius, flattening) => {
             ellipsoid.radius = radius;
             ellipsoid.flattening = flattening;
             ellipsoid.eccentricity = flat2ecc(flattening);
@@ -37,12 +37,12 @@ function geographic () {
     /**
      * Get the ellipsoid object
      */
-    this.getellipsoid = () => { return ellipsoid; }
+    this.getEllipsoid = () => { return ellipsoid; }
 
     /**
      * Set the projection origin object
      */
-    this.setorigin = (lat0, lon0, h0) => {
+    this.setOrigin = (lat0, lon0, h0) => {
             origin.lat = lat0;
             origin.lon = lon0;
             origin.h = h0;
@@ -51,7 +51,7 @@ function geographic () {
     /**
      * Get the projection origin object
      */
-    this.getorigin = () => { return origin; }
+    this.getOrigin = () => { return origin; }
 }
 { // Conversion functions
         /**
