@@ -21,7 +21,7 @@
   "homepage": "https://github.com/ribollamasetti/geographic#readme",
   "dependencies": {
     "compute-polynomial": "^1.1.0",
-    "mathjs": "^6.2.3",
+    "mathjs": "^9.4.2",
     "socket.io": "^2.3.0"
   }
 }
